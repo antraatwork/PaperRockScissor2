@@ -1,0 +1,43 @@
+<div class="scores">
+    <div class="player">
+        <h2 class="playerName">Player</h2>
+        <p class="playerScore">{{playerScore}}</p>
+    </div>
+    <div class="computer">
+        <h2 class="computerName">Computer</h2>
+        <p class="computerscore">{{computerScore}}</p>
+    </div>
+</div>
+
+<div class="playGame" >
+    <button (click)="finishGame()" class="endbtn">End</button>
+    <h2 class="choose">Choose an Option</h2>
+    <div class="hands">
+    <div class="playerHand" >
+        <img src="../../assets/images/rock.png" alt="" class="rock" *ngIf ="doPlayerShowRock">
+        <img src="../../assets/images/scissor.png" alt="" class="scissor" *ngIf ="doPlayerShowScissor">
+        <img src="../../assets/images/paper.png" alt="" class="paper" *ngIf ="doPlayerShowPaper">
+
+    </div>  
+    <div class="computerHand">    
+        <img src="../../assets/images/rock.png" alt="" class="rock" *ngIf ="doCompShowRock">
+        <img src="../../assets/images/scissor.png" alt="" class="scissor" *ngIf ="doCompShowScissor">
+        <img src="../../assets/images/paper.png" alt="" class="paper" *ngIf ="doCompShowPaper">
+    </div>
+    </div>
+    <div class="btns">
+        <button class="rockbtn" (click)="displayRock()">Rock</button>
+        <button class="paperbtn"(click)="displayPaper()">Paper</button>
+        <button class="scissorbtn" (click)="displayScissor()">Scissor</button>
+    </div>
+
+</div>
+<div id="toastr" *ngIf= "showWinner">
+    <div class="result">
+        {{winner}}
+    </div>
+    <!-- <div class="newGameAgain" >
+        <button class="newGameAgainbtn" (click)="newGame()">New Game</button>
+    </div> -->
+    <span class="closebtn" (click)="gotoMainPage()">&times;</span>
+</div> 

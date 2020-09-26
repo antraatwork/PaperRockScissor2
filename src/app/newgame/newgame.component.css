@@ -1,0 +1,93 @@
+.scores{
+
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.player, .computer{
+
+    text-align: center;
+    justify-content: space-around;
+
+}
+
+.endbtn{
+
+    text-align: center;
+    justify-content: space-around;
+    font-size: 20px;
+    background-color: cadetblue;
+    border-radius: 5px;
+    border: solid;
+    border-color: cadetblue;
+
+}
+
+.playGame{
+
+    text-align: center;
+    justify-content: space-around;
+}
+
+.hands{
+
+    display:flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.computerHand , .playerHand{
+    margin:10px;
+}
+.rockbtn, .paperbtn,.scissorbtn{
+
+    font-size: 20px;
+    background-color: cadetblue;
+    border-radius: 5px;
+    border: solid;
+    border-color: cadetblue;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.btns{
+
+    text-align: center;
+    justify-content: space-around;
+    flex-direction: row;
+    display: flex;
+    margin-top: 20px;
+}
+
+#toastr{
+
+    padding: 10px;
+    background-color: #7a7373;
+    color:white;
+    position: absolute;
+    top:20%;
+    bottom: 20%;
+    right: 20%;
+    left: 20%;
+    justify-content: center;
+    border-radius:10px;
+    font-size:30px;
+
+}
+
+.closebtn{
+    position: absolute;
+    top:2%;
+    right:2%;
+}
+
+.result{
+    text-align: center;
+    justify-content: space-around;
+    font-size: 50px;
+    color: blanchedalmond;
+}
