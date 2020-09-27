@@ -75,7 +75,7 @@
     left: 20%;
     justify-content: center;
     border-radius:10px;
-    font-size:30px;
+    /* font-size:20px; */
 
 }
 
@@ -85,6 +85,10 @@
     right:2%;
 }
 
+.closebtn:hover{
+
+    cursor:pointer;
+}
 .result{
     text-align: center;
     justify-content: space-around;
